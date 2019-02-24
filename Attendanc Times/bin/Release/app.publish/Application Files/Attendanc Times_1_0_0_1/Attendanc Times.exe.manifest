@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Attendanc Times.exe" version="1.0.0.1" publicKeyToken="b22d1db9b905f4d1" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Attendanc Times" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Attendanc Times.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Attendanc Times.exe" size="277464">
+      <assemblyIdentity name="Attendanc Times" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>PJ7zQq5uDun6c0IKYAPWtkpoQZSAbmBRgRSxbUoewDg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Attendanc Times.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=CAELUM\Shehab.Magdy" issuerKeyHash="b1c555d7951b2e0a6cf948e86b12fbb446944234" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>52Tvm1j/FBszkobt4lSocsPFncEd4dftb0QCgkyUhWk=</DigestValue></Reference></SignedInfo><SignatureValue>aQltyau75SAY1eR4t4opYYH6GWDFvUJbTiF2XfUhasHVt0U6I2/0zpDvYr1+OQjAObpuINwI/w5JgnMSRyGghdnAvux3xVRazUaydBWJsu5k8QuOkuAXlo3hgzh3YET6UkNnaN+GV/045cZkHu5d01H2Pw7rhrjPUa8MzgTRG0U=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>pQ4pjxW4THYa7KmSIXInmbZqH6rZkxP99XgJ1/Qx3ID1mm9Jn/fTvQ1rRjvUlgIB2JfeZuBUH31wh+wmfjMg9eSKoOlOI7+B9dZDPA6YVFtdg3wsfKwunTtzUv6ouHM48j9iHMBMZrI9+yukT460C/VkSBB+w80SVQjAxigskS0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="6985944c8202446fedd7e11dc19dc5c372a854e2ed8692331b14ff589bef64e7" Description="" Url=""><as:assemblyIdentity name="Attendanc Times.exe" version="1.0.0.1" publicKeyToken="b22d1db9b905f4d1" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=CAELUM\Shehab.Magdy</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>WXilBjJ0STZ/5KM9snFLo2O9p/D/3FZU33Z6kG0KVY4=</DigestValue></Reference></SignedInfo><SignatureValue>Ier7vBAFvEpZ2qfAGZWd3vDLJNfJBF+GzgFijPzLGkNU/SmtCWe5fikJGYef2+XpT1vBFqhNABuH1qfoITRseWgB7PgMlYblNLy+yf/8eQz6YdiHWPNTHBFK6n1HBTDL4oYAfwHQnxmGNAI+FmaaZoS6M7VfV0gCT3fCqkmgXBI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pQ4pjxW4THYa7KmSIXInmbZqH6rZkxP99XgJ1/Qx3ID1mm9Jn/fTvQ1rRjvUlgIB2JfeZuBUH31wh+wmfjMg9eSKoOlOI7+B9dZDPA6YVFtdg3wsfKwunTtzUv6ouHM48j9iHMBMZrI9+yukT460C/VkSBB+w80SVQjAxigskS0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQNe0HV6IabKtJMnJPKLrwmjANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYAQwBBAEUATABVAE0AXABTAGgAZQBoAGEAYgAuAE0AYQBnAGQAeTAeFw0xODA4MDkxMDAzMjBaFw0xOTA4MDkxNjAzMjBaMDExLzAtBgNVBAMeJgBDAEEARQBMAFUATQBcAFMAaABlAGgAYQBiAC4ATQBhAGcAZAB5MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQClDimPFbhMdhrsqZIhcieZtmofqtmTE/31eAnX9DHcgPWab0mf99O9DWtGO9SWAgHYl95m4FQffXCH7CZ+MyD15Iqg6U4jv4H11kM8DphUW12DfCx8rC6dO3NS/qi4czjyP2IcwExmsj37K6RPjrQL9WRIEH7DzRJVCMDGKCyRLQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAAvuWt4wg3QX/Df3gxWxtiVtpuDi/6T9F5SZ0OpTn6ptp2cAtOtVBSQ0OZOeZ6mtCzNrP7DsHKzJUr+zDAjOxVFGRU71z+7wkHMaApHuInfKrqKZP58Z4uzrvnQNRzPin7a9Qa2cJwSi2S+y9QZ8MDnWKi8S1ELtDjF5QI98uHAi</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
