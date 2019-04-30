@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace Attendanc_Times
 {
@@ -76,12 +77,12 @@ namespace Attendanc_Times
                 textBox5.Text = Leav_H.ToString();
                 textBox6.Text = Leav_M.ToString();
             }
+            /*textBox3.Focus();*/
         }
 
         private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
-              (e.KeyChar != '.'))
+            if(!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
             {
                 e.Handled = true;
             }
@@ -95,8 +96,7 @@ namespace Attendanc_Times
 
         private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
-              (e.KeyChar != '.'))
+            if(!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
             {
                 e.Handled = true;
             }
@@ -138,5 +138,37 @@ namespace Attendanc_Times
             }
         }
 
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            if(Regex.IsMatch(textBox3.Text, @"^([01]\d|2[0-3])"))
+            {
+                textBox4.Focus();
+                textBox3.ForeColor = Color.Black;
+            }
+
+        }
+
+        private void textBox3_MouseEnter(object sender, EventArgs e)
+        {
+            textBox3.Text="";
+            textBox3.ForeColor = Color.Black;
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            if(Regex.IsMatch(textBox4.Text,"^([0-5][0-9])"))
+            {
+                button1.Focus();
+                textBox4.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBox4_MouseEnter(object sender, EventArgs e)
+        {
+            textBox4.Text = "";
+            textBox4.ForeColor = Color.Black;
+        }
+
         }
 }
+
