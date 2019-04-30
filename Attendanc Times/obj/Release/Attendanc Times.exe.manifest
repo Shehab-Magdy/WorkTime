@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Attendanc Times.exe" size="277464">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Attendanc Times.exe" size="278488">
       <assemblyIdentity name="Attendanc Times" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>PJ7zQq5uDun6c0IKYAPWtkpoQZSAbmBRgRSxbUoewDg=</dsig:DigestValue>
+        <dsig:DigestValue>grH6+lmnEUv53hrcukPs0x9HuSBjWuWL7hskjqpGnjI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
